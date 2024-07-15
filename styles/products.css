@@ -1,0 +1,783 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*first div  */
+#container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    flex-wrap: wrap;
+}
+
+#img1 {
+    height: 80px;
+}
+#scontainer {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 0;
+    padding-top: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+select {
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#Resources {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Resources:hover {
+    color: rgb(91, 56, 194);
+}
+
+#bt1 {
+    background: linear-gradient(90deg, #4e3bbf, #a928d8);
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -22px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#bt1:hover {
+    background: linear-gradient(90deg, #e30404, #29ac05);
+}
+
+.open-popup-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+}
+
+.popup-header {
+    background: linear-gradient(to right, #ff9b71 0%, #5a39c2 60%, #9e2ad5 100%);
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.popup-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="email"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+
+#phone {
+    margin-right: 20px;
+}
+
+.popup-form select {
+    padding: 10px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+
+#id {
+    padding-left: 10px;
+}
+
+.popup-form .phone-group {
+    display: flex;
+    align-items: center;
+}
+
+.popup-form .phone-group select {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.popup-form input[type="submit"] {
+    padding: 10px;
+    background: linear-gradient(90deg, #4e3bbf, #a928d8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    #container, #scontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #bt1 {
+        margin-top: 10px;
+    }
+
+    .popup-content {
+        width: 95%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .popup-header h2 {
+        margin-bottom: 10px;
+    }
+}
+
+/* second-div */
+
+#seconddiv{
+    display: flex;
+    background-image: url(https://kona-digital.com/images/productbanner.jpg);
+    position: relative;
+    background-size: contain;
+    margin-top: 20px;
+}
+#seconddiv>div>h1{
+    background: linear-gradient(90deg, #272657 0%, #5391E4 48.1%, #272657 100%);
+    font-size: 40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 190px;
+    width:73%;
+    padding-top: 60px;
+}
+#seconddiv>div>p{
+display: block;
+padding-left: 190px;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+unicode-bidi: isolate;
+width: 72%;
+font-size: 16px;
+}
+#seconddiv1>img{
+    height: 500px;
+    padding-right: 30px;
+    padding-top: 80px;
+    position: relative;   
+    opacity: 0.8 !important;
+}
+
+#seconddiv > div> button{
+position: relative;
+background: linear-gradient(90deg, #4e3bbf, #a928d8);
+display: inline-block;
+color: #fff;
+border: none;
+padding: 10px 24px !important;
+border-radius: 8px;
+margin-left: 200px;
+
+}
+@media only screen and (max-width: 600px) {
+   
+    #seconddiv{
+        display: flex;
+        background-image: url(https://kona-digital.com/images/productbanner.jpg);
+        opacity:-1;
+        background-size: contain;
+        margin-top: -500px;
+    }
+    #seconddiv>div>h1{
+        background: linear-gradient(90deg, #272657 0%, #5391E4 48.1%, #272657 100%);
+        font-size: 40px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-left: 100px;
+        width:85%;
+        padding-top: 60px;
+    }
+    #seconddiv>div>p{
+    display: block;
+    padding-left: 80px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    width: 65%;
+    text-align: left ;
+    font-size: 16px;
+    }
+    #seconddiv1>img{
+        display: none !important;
+        height: 0px;
+        padding-right:0px;
+        padding-top: 80px;
+        position: relative;   
+        opacity: 0.8 !important;
+    }
+    
+    #seconddiv > div> button{
+    position: relative;
+    background: linear-gradient(90deg, #4e3bbf, #a928d8);
+    display: inline-block;
+    color: #fff;
+    border: none;
+    padding: 10px 24px !important;
+    border-radius: 8px;
+    margin-left: 200px;
+    
+  }
+}
+/* third-div */
+#thirddiv >h2{
+    background: linear-gradient(90deg, #8D65E9 0%, #5391E4 48.1%, #6BCD94 100%);
+    font-size: 50px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 450px;
+    width:70%;
+}
+#thirddiv > p {
+    margin: 20px 0 30px;
+    line-height: 25px;
+    font-size:16px ;
+    text-align: center;
+    padding-left: 450px;
+    width:72%;
+}
+
+@media screen and (max-width: 600px) {
+    #thirddiv > h2 {
+        font-size:65px; 
+        text-align: center; 
+        margin-left: -380px; 
+        margin-top: -50px; 
+        width:150%;
+    }
+    #thirddiv > p {
+        line-height: 22px; 
+        font-size: 14px; 
+        margin-left: 115px;
+        padding: 0 10px; 
+        text-align: center;
+        width:60%;
+    }
+}
+/* four-div */
+#fourdiv{
+    display: flex;
+    text-align: center;
+    gap:20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+#fourdiv > div >h4{
+    color:darkblue;
+    font-size: 25px;
+}
+
+#fourdiv > div >p{
+    width:78%;
+    margin-left:45px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+    #fourdiv {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px; 
+    }
+    #fourdiv > div > h4 {
+        color:darkblue;
+        font-size: 20px; 
+        text-align: center; 
+    }
+    #fourdiv > div > p {
+        width: 50%; 
+        margin-left: 140px; 
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        padding: 0 10px; 
+    }
+}
+
+
+/* five-div */
+
+#fivediv{
+    display: flex;
+    text-align: center;
+    gap:20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+#fivediv > div >h4{
+    color:darkblue;
+    font-size: 25px;
+}
+
+#fivediv > div >p{
+    width:78%;
+    margin-left:45px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+@media screen and (max-width: 600px) {
+    #fivediv {
+        
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px; 
+    }
+    #fivediv > div > h4 {
+        color:darkblue;
+        font-size: 20px; 
+        text-align: center; 
+    }
+    #fivediv > div > p {
+        width: 50%; 
+        margin-left: 140px; 
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        padding: 0 10px; 
+    }
+}
+
+/* six-div */
+
+#sixdiv{
+    display: flex;
+    justify-content: space-around;
+    padding: 120px 0;
+    background: linear-gradient(180deg, #F0F9F8 0%, rgba(240, 249, 248, 0) 100%);
+    margin-top: 120px;
+    margin-left: -150px;
+}
+#sixdiv>div> button{
+    background: linear-gradient(90deg, #8D65E9 0%, #5391E4 48.99%, #6BCD94 100%);
+    padding: 8px 30px;
+    display: inline-block;
+    border-radius: 30px;   color: #fff;
+    margin-left: 185px;
+    border: none;
+}
+#sixdiv>div> h1{
+    background: linear-gradient(90deg, #8D65E9 0%, #5391E4 48.1%, #6BCD94 100%);
+    font-size: 50px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 185px;
+    width: 60%;
+}
+#sixdiv>div> p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-left: 185px;
+    width: 55%;
+}
+#sixdiv>div>div> p{
+margin-top:20px;
+color: #212529;
+line-height: 22px;
+font-size: 20px;
+font-family: Poppins, sans-serif;
+margin-left: 185px;
+width: 70%;
+}
+#sixdiv1{
+    margin-left: -600px;
+}
+@media screen and (max-width: 600px) {
+    #sixdiv {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 40px 20px;
+        background: linear-gradient(180deg, #F0F9F8 0%, rgba(240, 249, 248, 0) 100%);
+        margin-top: 60px; 
+        margin-left: 0; 
+    }
+    #sixdiv > div > button {
+        background: linear-gradient(90deg, #8D65E9 0%, #5391E4 48.99%, #6BCD94 100%);
+        padding: 8px 20px; 
+        display: inline-block;
+        border-radius: 30px;   
+        color: #fff;
+        margin-left: 190px;
+        margin-top: 20px; 
+        border: none;
+    }
+    #sixdiv > div > h1 {
+        background: linear-gradient(90deg, #8D65E9 0%, #5391E4 48.1%, #6BCD94 100%);
+        font-size: 28px; 
+        font-weight: 500;
+        margin: 20px 0 10px;
+        margin-left: 120px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center; 
+        width: 60%; 
+    }
+    #sixdiv > div > p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px; 
+        text-align: center; 
+        width: 70%; 
+        margin-left: 90px; 
+        margin-top: 10px; 
+    }
+    #sixdiv > div > div > p {
+        margin-top: 20px;
+        color: #212529;
+        line-height: 22px;
+        font-size: 16px; 
+        font-family: Poppins, sans-serif;
+        text-align: center; 
+        width: 90%;
+        margin-left: 40px;
+    }
+    #sixdiv1 {
+        margin-left: 0; 
+    }
+}
+
+#Q{
+    font-size: 50px;
+    text-align: center;
+    color:rgb(132, 48, 207);
+}
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#container1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(1deg, #e4edf5, #fff);
+}
+
+#container1 div>h1 {
+    color: rgb(132, 48, 207)
+}
+
+#container1 div>p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.butto {
+     padding: 12px 30px 12px 30px;
+     border-radius: 10px;
+     background: linear-gradient(90deg, #4e3bbf, #a928d8);
+     font-size: 20px;
+     color: white;
+     margin-top: 25px;
+}
+.butto:hover {
+    color: #fff;
+    background: rgb(132, 48, 207) ;
+}
+
+.butto:hover::before {
+    top: 0px;
+}
+
+
+#img8 {
+    height: 450px;
+}
+
+#container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+#container2 div>h3{
+    color:blueviolet
+}
+#container2>div {
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #Q{
+        font-size: 30px;
+        text-align: center;
+        color: rgb(132, 48, 207);
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+        flex-wrap: wrap; /* Added for better layout on small screens */
+    }
+
+    #container1 {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+        font-size: 16px;
+        font-family: Poppins, sans-serif;
+        background: linear-gradient(1deg, #e4edf5, #fff);
+        padding: 20px; /* Added for better spacing */
+    }
+
+    #container1 div>h1 {
+        color: rgb(132, 48, 207);
+    }
+
+    #container1 div>p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .butto {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #4e3bbf, #a928d8);
+        font-size: 16px;
+        color: white;
+        margin-top: 25px;
+    }
+
+    .butto:hover {
+        color: #fff;
+        background: rgb(132, 48, 207);
+    }
+
+    .butto:hover::before {
+        top: 0px;
+    }
+
+    #img8 {
+        height: 300px; /* Reduced height for smaller screens */
+    }
+
+    #container2 {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 10px; /
+    }
+
+    #container2 div>h3 {
+        color: blueviolet;
+    }
+
+    #container2>div {
+        margin: 10px;
+        width: 100%; 
+    }
+
+    #container2 img {
+        max-width: 100%;
+    }
+}
+
+#accordionPanelsStayOpenExample {
+    display: none;
+}
+#accordionPanelsStayOpenExample1{
+    display: block;
+}
+@media screen and (max-width: 600px) {
+    #accordionPanelsStayOpenExample{
+        display: block;
+    }
+    #accordionPanelsStayOpenExample1{
+        display: none;
+    }
+    .accordion {
+        margin: 0 1rem; 
+    }
+
+    .accordion-item {
+        border: transparent;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .accordion-header {
+        font-size: 16px;
+    }
+
+    .accordion-button {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+
+    .accordion-body {
+        font-size: 14px; 
+    }
+}
+#img9 {
+    height: 200px;
+    max-width: 200px;
+}
+#whatsapp{
+    position: fixed;
+   border: 1px black solid;
+   background-color: rgb(132, 48, 207) ;
+   padding: 20px;
+   border-radius: 50% ;
+   border: none;
+   box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 100px 0px;
+   right:18px;
+   bottom:80px;
+}   
+ /* Button to open the popup */
+ .phone-btn1{
+    width: 50px;
+    height: 50px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* The popup */
+.popup1 {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup-header1 {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-header1 h2 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.close-btn1 {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.popup-content1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.popup-content1 p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
