@@ -147,6 +147,7 @@ select {
     #container, #scontainer {
         flex-direction: column;
         align-items: center;
+        
     }
     #bt1 {
         margin-top: 10px;
@@ -157,6 +158,11 @@ select {
     }
 }
 @media (max-width: 480px) {
+    #container, #scontainer {
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+    }
     .popup-header {
         flex-direction: column;
         text-align: center;
@@ -321,10 +327,12 @@ select {
 @media (max-width: 768px) {
     #col-2{
         gap:10px;
+        margin-left: 50px;
     }
     .col-2-text h1{
         font-size: 30px;
         width: 100%;
+        margin-left: 50px;
     }
     .col-2-img{
         width: 200% !important;
@@ -332,6 +340,7 @@ select {
     }
     .col-2-text p{
         width: 100%;
+        margin-left: 50px;
         
     }
 }
@@ -358,235 +367,436 @@ select {
     padding-top: 100px;
     font-weight: 500;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#whatsapp{
-    position: fixed;
-   border: 1px black solid;
-   background-color: rgb(132, 48, 207) ;
-   padding: 20px;
-   border-radius: 50% ;
-   border: none;
-   box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 100px 0px;
-   right:18px;
-   bottom:80px;
-}   
- /* Button to open the popup */
- .phone-btn1{
-    width: 50px;
-    height: 50px;
-    background-color: #6c63ff;
-    color: white;
-    border: none;
-    border-radius: 50%;
+#col-4-img1{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: left ;
+    gap: 250px;
+    padding-right: 100px;
 }
-
-/* The popup */
-.popup1 {
-    display: none;
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-.popup-header1 {
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
-    padding: 10px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.popup-header1 h2 {
-    margin: 0;
-    font-size: 1em;
-}
-
-.close-btn1 {
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.popup-content1 {
-    padding: 20px;
-    text-align: center;
-}
-
-.popup-content1 p {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
-}
-
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
-#container1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 150px;
+.p1 p{
+    padding-left:50px !important;
     font-size: 20px;
     font-family: Poppins, sans-serif;
-    background: linear-gradient(1deg, #e4edf5, #fff);
 }
 
-#container1 div>h1 {
-    color: rgb(132, 48, 207)
-}
-
-#container1 div>p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.butto {
-     padding: 12px 30px 12px 30px;
-     border-radius: 10px;
-     background: linear-gradient(90deg, #4e3bbf, #a928d8);
-     font-size: 20px;
-     color: white;
-     margin-top: 25px;
-}
-.butto:hover {
-    color: #fff;
-    background: rgb(132, 48, 207) ;
-}
-
-.butto:hover::before {
-    top: 0px;
-}
-
-
-#img8 {
-    height: 450px;
-}
-
-#container2 {
+#col-4-img2{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 20px;
+    justify-content: right;
+    gap: 250px;
+    padding-right: 70px;
+    margin-top: -100px;
 }
-#container2 div>h3{
-    color:blueviolet
+.p2 p{
+    padding-left:50px !important;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
 }
-#container2>div {
-    margin: 10px;
+#col-4-text{
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    margin-top: 100px;
 }
-
-
-@media screen and (max-width: 600px) {
-    #Q{
-        font-size: 30px;
-        text-align: center;
-        color: rgb(132, 48, 207);
+#col-4-text p{
+    background: linear-gradient(90deg, #8D65E9 0%, #5391E4 48.99%, #6BCD94 100%);
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: 100;
+    border-radius: 30px;
+}
+#col-4-text h1{
+    background: linear-gradient(90deg, #8D65E9 0%, #5391E4 48.1%, #6BCD94 100%);
+    font-size: 50px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px){
+    #col-4-img1{
+        display: flex;
+        justify-content: left ;
+        gap: 60px;
+        padding-right: 200px;
     }
+    #col-4-img2{
+        width: 50%;
+        justify-content: left !important ;
+        gap: 60px;
+        padding-left: 125px;
+        
+      
+    }
+}
+@media (max-width: 480px){
+    #col-4-img1{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0%;
+        gap: 40px;
+    }
+    #col-4-img2{
+        display: flex;
+        
+      margin-top: 0px;
+      margin: 0%;
+      padding: 0%;
+      gap: 10px;
+    }
+}
+#QA{
+        text-align: center;
+        color: rgb(0,12,96);
+        margin-top: -33%;
+        margin-bottom: 2%; 
+    }
+    #bimg{
+        background-image: url(	https://kona-digital.com/images/blur3.png);
+        background-position:left;
+    
+    background-repeat: no-repeat;
+    margin-top:-200px;
+    height: 800px;
+    max-width: 100%;
+    vertical-align: middle;
+    }
+    @media (max-width: 768px) {
+        .accordion{
+            margin: 0px 10px !important;
+            background-color: transparent !important ;
+        }
+        .accordion-item{
+            background-color: transparent !important;
+        }
+        .accordion-button{
+            background-color: transparent !important;
+        }
+        #bimg{
+            background-image: url(	https://kona-digital.com/images/blur3.png);
+            background-position:left;
+        background-repeat: no-repeat;
+        margin-top:-400px;
+        height: 800px;
+        max-width: 100%;
+        vertical-align: middle;
+        }
+        #QA{
+            text-align: center;
+            color: rgb(0,12,96);
+            margin-top: -50%;
+            margin-bottom: 2%; 
+        }
+    }
+    @media (max-width: 480px) {
+        
+        #QA{
+            text-align: center;
+            color: rgb(0,12,96);
+            margin-top: -80%;
+            margin-bottom: 2%; 
+        }
+    }
+
 
     footer {
         display: flex;
         justify-content: center;
         padding: 20px;
         background-color: #f8f8f8;
-        flex-wrap: wrap; /* Added for better layout on small screens */
     }
-
+    
     #container1 {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
         text-align: center;
         justify-content: center;
-        margin-top: 50px;
-        font-size: 16px;
+        margin-top: 150px;
+        font-size: 20px;
         font-family: Poppins, sans-serif;
         background: linear-gradient(1deg, #e4edf5, #fff);
-        padding: 20px; /* Added for better spacing */
     }
-
+    
     #container1 div>h1 {
-        color: rgb(132, 48, 207);
+        color: rgb(132, 48, 207)
     }
-
+    
     #container1 div>p {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-
+    
     .butto {
-        padding: 10px 20px;
+        padding: 12px 30px 12px 30px;
         border-radius: 10px;
         background: linear-gradient(90deg, #4e3bbf, #a928d8);
-        font-size: 16px;
+        font-size: 20px;
         color: white;
         margin-top: 25px;
     }
-
+    
     .butto:hover {
         color: #fff;
         background: rgb(132, 48, 207);
     }
-
+    
     .butto:hover::before {
         top: 0px;
     }
-
+    
+    
     #img8 {
-        height: 300px; /* Reduced height for smaller screens */
+        height: 450px;
     }
-
+    
     #container2 {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        justify-content: space-between;
         width: 100%;
+        max-width: 1200px;
         margin-top: 20px;
-        padding: 0 10px; /
     }
-
+    
     #container2 div>h3 {
-        color: blueviolet;
+        color: blueviolet
     }
-
+    
     #container2>div {
         margin: 10px;
-        width: 100%; 
     }
-
-    #container2 img {
-        max-width: 100%;
+    #img9 {
+        height: 200px;
+        max-width: 200px;
     }
-}
+    
+    @media (max-width: 480px) {
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            padding-right:-500px;
+            background-color: #f8f8f8;
+        }
+        
+        #container1 {
+            display: flex;
+            flex-direction: column; /* Ensure vertical stacking for small screens */
+            text-align: center;
+            justify-content: center;
+            margin-top: 50px; /* Reduced for better fit on small screens */
+            font-size: 18px; /* Slightly smaller font size */
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(1deg, #e4edf5, #fff);
+            padding: 10px 50px; /* Add padding for better appearance */
+        }
+        
+        #container1 div>h1 {
+            color: rgb(132, 48, 207);
+            font-size: 24px; /* Ensure header size is readable on small screens */
+        }
+        
+        #container1 div>p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px; /* Adjust paragraph font size */
+        }
+        
+        .butto {
+            padding: 12px 20px; /* Adjust button padding for small screens */
+            border-radius: 10px;
+            background: linear-gradient(90deg, #4e3bbf, #a928d8);
+            font-size: 16px; /* Reduce font size for better fit */
+            color: white;
+            margin-top: 20px; /* Slightly reduced margin */
+        }
+        
+        .butto:hover {
+            color: #fff;
+            background: rgb(132, 48, 207);
+        }
+        
+        .butto:hover::before {
+            top: 0px;
+        }
+        
+        #img8 {
+            height: auto;
+            max-width: 100%; /* Ensure the image is responsive */
+        }
+        
+        #container2 {
+            display: flex;
+            flex-direction: column; /* Stack items vertically on small screens */
+            justify-content: center; /* Center items vertically */
+            align-items: center; /* Center items horizontally */
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        #container2 div>h3 {
+            color: blueviolet;
+            text-align: center; /* Center text for better readability */
+        }
+        
+        #container2>div {
+            margin: 10px;
+            width: 100%; /* Ensure divs take full width */
+            text-align: center; /* Center text inside divs */
+        }
+    
+        #img9 {
+            height: auto;
+            max-width: 100%; /* Ensure the image is responsive */
+        }
+    }
+    #whatsapp{
+        position: fixed;
+       border: 1px black solid;
+       background-color: rgb(132, 48, 207) ;
+       padding: 20px;
+       border-radius: 50% ;
+       border: none;
+       box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 100px 0px;
+       right:18px;
+       bottom:80px;
+    }   
+     /* Button to open the popup */
+     .phone-btn1{
+        width: 50px;
+        height: 50px;
+        background-color: #6c63ff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* The popup */
+    .popup1 {
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .popup-header1 {
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .popup-header1 h2 {
+        margin: 0;
+        font-size: 1em;
+    }
+    
+    .close-btn1 {
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .popup-content1 {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .popup-content1 p {
+        margin: 0;
+        font-size: 1.2em;
+        color: #333;
+    }
+    
+    @media (max-width: 480px) {
+        #whatsapp{
+            position: fixed;
+           border: 1px black solid;
+           background-color: rgb(132, 48, 207) ;
+           padding: 20px;
+           border-radius: 50% ;
+           border: none;
+           box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 100px 0px;
+           right:18px;
+           bottom:80px;
+        }   
+         /* Button to open the popup */
+         .phone-btn1{
+            width: 50px;
+            height: 50px;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 80px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* The popup */
+        .popup1 {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .popup-header1 {
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .popup-header1 h2 {
+            margin: 0;
+            font-size: 1em;
+        }
+        
+        .close-btn1 {
+            cursor: pointer;
+            font-size: 20px;
+        }
+        
+        .popup-content1 {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .popup-content1 p {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        
+    }
+    
