@@ -182,6 +182,23 @@ select {
         margin: 10px;
     }
 }
+@media (max-width: 480px) {
+    #container, #scontainer {
+        flex-direction: column;
+        align-items: center;
+        padding-right:50px;
+        margin-right: -80px;
+    }
+
+    #bt1 {
+        margin-top: 10px;
+    }
+
+    .popup-content {
+        width: 95%;
+        margin: 10px;
+    }
+}
 
 @media (max-width: 480px) {
     .popup-header {
@@ -314,6 +331,27 @@ margin-left: 200px;
     padding-left: 450px;
     width:72%;
 }
+@media screen and (max-width: 480px) {
+    #thirddiv > h2 {
+        font-size:45px !important; 
+        text-align: center; 
+        margin-left: -305px !important; 
+        margin-top: -200px !important; 
+        width:150% ;
+    }
+
+    #thirddiv > p {
+        font-size: 20px; 
+        margin-top: 10px !important;
+        padding-left: 50px !important; 
+        width: 100%;
+        line-height: 22px !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+
 
 @media screen and (max-width: 600px) {
     #thirddiv > h2 {
@@ -375,6 +413,30 @@ margin-left: 200px;
 }
 
 
+@media screen and (max-width: 480px) {
+    #fourdiv {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px; 
+    }
+    #fourdiv > div > h4 {
+        color:darkblue;
+        font-size: 20px; 
+        text-align: center;
+        margin-left: 80px; 
+    }
+    #fourdiv > div > img {
+        margin-left: 80px;
+    }
+    #fourdiv > div > p {
+        width: 50%; 
+        margin-left: 160px; 
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        padding: 0 10px; 
+    }
+}
 /* five-div */
 
 #fivediv{
@@ -396,6 +458,37 @@ margin-left: 200px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
+
+
+@media screen and (max-width: 480px) {
+    #fivediv {
+        
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px; 
+    }
+    #fivediv > div > h4 {
+        color:darkblue;
+        font-size: 20px; 
+        text-align: center; 
+        margin-left: 85px;
+    }
+    #fivediv > div > img {
+        margin-left: 70px;
+    }
+    #fivediv > div > p {
+        width: 50%; 
+        margin-left: 160px !important; 
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 0 10px; 
+    }
+}
+
+
+
 @media screen and (max-width: 600px) {
     #fivediv {
         
@@ -464,6 +557,65 @@ width: 70%;
 #sixdiv1{
     margin-left: -600px;
 }
+
+@media screen and (max-width: 480px) {
+    #sixdiv {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 40px 20px;
+        background: linear-gradient(180deg, #F0F9F8 0%, rgba(240, 249, 248, 0) 100%);
+        margin-top: 60px; 
+        margin-left: 0; 
+        margin-right: -85px;
+    }
+    #sixdiv > div > button {
+        background: linear-gradient(90deg, #8D65E9 0%, #5391E4 48.99%, #6BCD94 100%);
+        padding: 8px 20px; 
+        display: inline-block;
+        border-radius: 30px;   
+        color: #fff;
+        margin-left: 160px !important;
+        margin-top: 20px; 
+        border: none;
+    }
+    #sixdiv > div > h1 {
+        background: linear-gradient(90deg, #8D65E9 0%, #5391E4 48.1%, #6BCD94 100%);
+        font-size: 28px; 
+        font-weight: 500;
+        margin: 20px 0 10px;
+        margin-left: 100px !important;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center; 
+        width: 60%; 
+    }
+    #sixdiv > div > p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px; 
+        text-align: center; 
+        width: 70%; 
+        margin-left: 90px; 
+        margin-top: 10px; 
+    }
+    #sixdiv > div > div > p {
+        margin-top: 20px;
+        color: #212529;
+        line-height: 22px;
+        font-size: 16px; 
+        font-family: Poppins, sans-serif;
+        text-align: center; 
+        width: 90%;
+        margin-left: 40px;
+    }
+    #sixdiv1 {
+        margin-left: 0; 
+    }
+
+
+}
+
 @media screen and (max-width: 600px) {
     #sixdiv {
         display: flex;
@@ -584,6 +736,91 @@ footer {
     margin: 10px;
 }
 
+@media screen and (max-width: 480px) {
+    #Q{
+        font-size: 30px;
+        text-align: center;
+        color: rgb(132, 48, 207);
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        flex-wrap: wrap; /* Added for better layout on small screens */
+    }
+
+    #container1 {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-right: -90px;
+        font-size: 16px;
+        font-family: Poppins, sans-serif;
+        background: linear-gradient(1deg, #e4edf5, #fff);
+        padding: 20px; /* Added for better spacing */
+    }
+
+    #container1 div>h1 {
+        color: rgb(132, 48, 207);
+    }
+
+    #container1 div>p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .butto {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #4e3bbf, #a928d8);
+        font-size: 16px;
+        color: white;
+        margin-top: 25px;
+    }
+
+    .butto:hover {
+        color: #fff;
+        background: rgb(132, 48, 207);
+    }
+
+    .butto:hover::before {
+        top: 0px;
+    }
+
+    #img8 {
+        height: 300px; /* Reduced height for smaller screens */
+    }
+
+    #container2 {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        margin-top: 20px;
+        padding-left: -100px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-right: -50px;
+    }
+
+    #container2 div>h3 {
+        color: blueviolet;
+        text-align: center;
+    }
+
+    #container2>div {
+        margin: 10px;
+        text-align: center;
+        width: 100%; 
+    }
+
+    #container2 img {
+        max-width: 100%;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     #Q{
@@ -667,6 +904,14 @@ footer {
 
 #accordionPanelsStayOpenExample {
     display: none;
+    
+}
+
+@media screen and (max-width: 600px) {
+    #accordionPanelsStayOpenExample1{
+        display: block;
+        
+    }
 }
 #accordionPanelsStayOpenExample1{
     display: block;
