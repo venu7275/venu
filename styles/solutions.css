@@ -253,14 +253,16 @@ select {
 #col-1{
     display: block;
     width: 100%;
+    margin-right: -150px !important;
 }
 .col-1-button{
     display: flex;
     gap: 10px;
     width: 100%;
+    
 }
 .col-1-text{
-    margin: 0px;
+    margin-right: -150px !important;
     padding-left: 30px;
 }
 .col-1-text h4{
@@ -352,6 +354,7 @@ select {
 }
 #col-3{
     background-image: url(	https://kona-digital.com/images/whatcanbg.svg);
+    margin-right: -60px;
 }
 .col-3-class{
     display: flex;
@@ -374,6 +377,7 @@ select {
     justify-content: left ;
     gap: 250px;
     padding-right: 100px;
+    margin-right: -50px;
 }
 .p1 p{
     padding-left:50px !important;
@@ -515,6 +519,7 @@ select {
         justify-content: center;
         margin-top: 150px;
         font-size: 20px;
+        margin-right: -70px;
         font-family: Poppins, sans-serif;
         background: linear-gradient(1deg, #e4edf5, #fff);
     }
